@@ -1,6 +1,6 @@
 from challengeML.src.satelite import Satelite
 
-def test_satellite_get_position_get_positions_correctly():
+def test_satellite_method_get_positions_works_correctly():
     #Arrange
     sat = Satelite('test', 10, 10)
     #Act
