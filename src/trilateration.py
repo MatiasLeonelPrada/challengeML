@@ -1,5 +1,4 @@
 """This module has the Trilateration algorithm implementation."""
-import numpy as np
 
 
 class NotValidSatellites(Exception):
@@ -61,7 +60,7 @@ class Trilateration:
         F = distances[1]**2 - distances[2]**2 - positions[1][0]**2 \
             + positions[2][0]**2 - positions[1][1]**2 + positions[2][1]**2
 
-        pos_x = np.divide(E * C - B * F, E * A - B * D)
-        pos_y = np.divide(D * C - A * F, B * D - E * A)
+        pos_x = (E * C - B * F) / (E * A - B * D)
+        pos_y = (D * C - A * F) / (B * D - E * A)
 
         return (round(pos_x, 2), round(pos_y, 2))

@@ -67,7 +67,7 @@ def test_correct_offset_method_in_msg_with_one_offset_in_first_msg_removes_them(
     assert len(mes_2) == 4
     assert mes_1[0] == "este"
 
-def test_correct_offset_method_in_msg_with_one_offset_in_first_msg_removes_them():
+def test_correct_offset_method_in_msg_with_one_offset_in_second_msg_removes_them():
     #Arrange
     mes_1 =  ["este", "es", "un", "mensaje"]
     mes_2 =  ["", "este", "", "un", "mensaje"]
